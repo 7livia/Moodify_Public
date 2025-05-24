@@ -1,25 +1,34 @@
-# Moodify
+#  Moodify
 
-A web app that turns your feelings into Spotify playlists.
+*A web app that turns your feelings into Spotify playlists.*
+
+![Playlist Generator](https://i.imgur.com/me3MXR6.png)
+![Main Page](https://i.imgur.com/DUz7Jbo.png)
+---
+
+##  Introduction
+
+Moodify allows users to type how they feel and generates a matching playlist. It uses **OpenAI** for mood analysis and the **Spotify Web API** to deliver music recommendations. Firebase handles authentication and playlist saving.
 
 ---
 
 ## Features
 
-- Display the Spotify user's profile picture in the navigation bar
-- View and search through user playlists in a collapsible sidebar
-- Navigate playlists and view track details
-- Logout function clears the authentication token and redirects to login
-- Store user data and playlists with Firebase Realtime Database or Firestore
+- Display Spotify user profile picture in the navbar
+- Show user playlists in a searchable sidebar
+- Navigate playlists and view details
+- Logout functionality clears auth token and redirects
+- Stores user data and playlists using Firebase Realtime Database / Firestore
 
 ---
 
 ## Tech Stack
 
-- React with Vite
-- Tailwind CSS for styling
+- React
+- Vite
+- Tailwind CSS
 - Spotify Web API
-- Firebase (Realtime Database or Firestore)
+- Firebase (Realtime Database / Firestore)
 
 ---
 
@@ -28,8 +37,8 @@ A web app that turns your feelings into Spotify playlists.
 ### Prerequisites
 
 - Node.js and npm installed
-- Spotify Developer account with a registered app
-- Spotify OAuth token with the following scopes:  
+- Spotify Developer Account & registered app
+- Spotify OAuth token with scopes:  
   `playlist-read-private`, `user-read-email`, `user-read-private`
 - Firebase project with Realtime Database or Firestore configured
 
@@ -42,15 +51,15 @@ A web app that turns your feelings into Spotify playlists.
     cd moodify
     ```
 
-2. Install the dependencies:
+2. Install dependencies:
 
     ```bash
     npm install
     ```
 
-3. Create a `.env` file in the root directory and add your Spotify and Firebase credentials:
+3. Create a `.env` file in the root and add your Spotify tokens and Firebase configuration variables:
 
-    ```env
+    ```
     VITE_SPOTIFY_CLIENT_ID=your_spotify_client_id
     VITE_SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
     VITE_FIREBASE_API_KEY=your_firebase_api_key
@@ -61,7 +70,7 @@ A web app that turns your feelings into Spotify playlists.
     VITE_FIREBASE_APP_ID=your_firebase_app_id
     ```
 
-4. Initialize Firebase in `src/firebase.js`:
+4. Add your Firebase secret key and initialize Firebase in `src/firebase.js`:
 
     ```js
     // src/firebase.js
@@ -81,9 +90,9 @@ A web app that turns your feelings into Spotify playlists.
     export const database = getDatabase(app); // or export const db = getFirestore(app);
     ```
 
-5. Set up your backend to handle Spotify OAuth and token exchange.
+5. Configure your Spotify auth backend as needed to support OAuth and token exchange.
 
-6. Run the development server:
+6. Start the development server:
 
     ```bash
     npm run dev
@@ -94,6 +103,6 @@ A web app that turns your feelings into Spotify playlists.
 ## Usage
 
 - Log in with your Spotify account
-- View your playlists in the sidebar
-- Generate new playlists or modify existing ones based on mood or keywords
-- All changes are saved and synced via Firebase
+- Browse your playlists on the sidebar
+- Generate or modify playlists based on mood or other filters
+- Data is saved and synced with Firebase for persistence
