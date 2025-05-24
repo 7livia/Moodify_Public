@@ -1,6 +1,14 @@
-# Moodify - Spotify Playlist Generator
+# 🎧 Moodify
 
-Moodify is a React app built with Vite and styled using Tailwind CSS. It connects to the Spotify API to let users browse and generate playlists, dynamically showing their profile picture and playlists. Additionally, it uses Firebase as a backend database to store user-related data securely.
+*A web app that turns your feelings into Spotify playlists.*
+
+![Banner](https://imgur.com/a/tyVcrl0)
+![Banner](https://imgur.com/a/zcvsDDS)
+---
+
+## 📌 Introduction
+
+Moodify allows users to type how they feel and generates a matching playlist. It uses **OpenAI** for mood analysis and the **Spotify Web API** to deliver music recommendations. Firebase handles authentication and playlist saving.
 
 ---
 
