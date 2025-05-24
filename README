@@ -1,17 +1,6 @@
 # Moodify
 
-*A web app that turns your feelings into Spotify playlists.*
-
-<p align="center">
-  <img src="https://i.imgur.com/yourbanner1.png" alt="Moodify Banner" width="800"/>
-  <img src="https://i.imgur.com/yourbanner2.png" alt="Moodify UI" width="800"/>
-</p>
-
----
-
-## Introduction
-
-Moodify allows users to type how they feel and generates a matching playlist. It leverages OpenAI for mood analysis and the Spotify Web API for music recommendations. Firebase is used for authentication and data storage.
+A web app that turns your feelings into Spotify playlists.
 
 ---
 
