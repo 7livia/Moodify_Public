@@ -1,18 +1,10 @@
-# 🎧 Moodify
-
-*A web app that turns your feelings into Spotify playlists.*
-
-![Banner](https://imgur.com/a/tyVcrl0)
-![Banner](https://imgur.com/a/zcvsDDS)
----
-
-## 📌 Introduction
+#  Introduction
 
 Moodify allows users to type how they feel and generates a matching playlist. It uses **OpenAI** for mood analysis and the **Spotify Web API** to deliver music recommendations. Firebase handles authentication and playlist saving.
 
 ---
 
-## Features
+# Features
 
 - Display Spotify user profile picture in the navbar
 - Show user playlists in a searchable sidebar
@@ -22,7 +14,7 @@ Moodify allows users to type how they feel and generates a matching playlist. It
 
 ---
 
-## Tech Stack
+# Tech Stack
 
 - React
 - Vite
@@ -32,9 +24,9 @@ Moodify allows users to type how they feel and generates a matching playlist. It
 
 ---
 
-## Getting Started
+# Getting Started
 
-### Prerequisites
+# Prerequisites
 
 - Node.js and npm installed
 - Spotify Developer Account & registered app
@@ -42,7 +34,7 @@ Moodify allows users to type how they feel and generates a matching playlist. It
   `playlist-read-private`, `user-read-email`, `user-read-private`
 - Firebase project with Realtime Database or Firestore configured
 
-### Installation
+# Installation
 
 1. Clone the repository:
 
@@ -100,7 +92,7 @@ Moodify allows users to type how they feel and generates a matching playlist. It
 
 ---
 
-## Usage
+# Usage
 
 - Log in with your Spotify account
 - Browse your playlists on the sidebar
