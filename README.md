@@ -47,7 +47,7 @@ Moodify allows users to type how they feel and generates a matching playlist. It
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/moodify.git
+    git clone https://github.com/yourusername/Moodify_Public.git
     cd moodify
     ```
 
